@@ -56,7 +56,7 @@ end architecture dataflow;
 ```
 
 #### Playground link
-![link to playground](https://www.edaplayground.com/x/8Ls6)
+[link to playground](https://www.edaplayground.com/x/8Ls6)
 
 #### Waveforms screenshot
 ![waveforms](images/1.jpg)
@@ -76,7 +76,7 @@ end architecture dataflow;
 ```
 
 #### Playground link
-![link to playground](https://www.edaplayground.com/x/aFrh)
+[link to playground](https://www.edaplayground.com/x/aFrh)
 #### Waveforms screenshot
 ![waveforms](images/2.jpg)
 
@@ -95,6 +95,6 @@ end architecture dataflow;
 ```
 
 #### Playground link
-![link to playground](https://www.edaplayground.com/x/HZnB)
+[link to playground](https://www.edaplayground.com/x/HZnB)
 #### Waveforms screenshot
 ![waveforms](images/3.jpg)
