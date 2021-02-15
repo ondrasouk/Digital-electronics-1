@@ -1,4 +1,5 @@
 # Assignment 1
+Link to this [Assignment](https://github.com/ondrasouk/Digital-electronics-1/tree/main/Labs/01-gates)
 ## Part 1
 1. this **repository**
 2. this *README.md*:
