@@ -24,8 +24,6 @@ begin
 [Back to top of repository](https://github.com/ondrasouk/Digital-electronics-1)
 ## Part 2
 ## Part 3
-```math
-f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
-f(c,b,a)_{\textup{NAND}} =&\\
-f(c,b,a)_{\textup{NOR}} =&\\
-```
+$f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
+$f(c,b,a)_{\textup{NAND}} =&\\
+$f(c,b,a)_{\textup{NOR}} =&\\
