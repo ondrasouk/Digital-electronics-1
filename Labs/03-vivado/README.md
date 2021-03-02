@@ -81,4 +81,27 @@ Next up is adding constrains files, but we will only click on Next.
 ![](images/sc6.png)  
 Next is choosing hardware and we click on Boards and then on "Nexys A7-50T" and click on Next.
 ![](images/sc7.png)  
-Project summary will look like this.
+Project summary will look like this.  
+Click on Finish.  
+![](images/sc8.png)  
+There will be another dialog window with module name, enter name and click on OK.  
+You have created a new project!
+### Adding source file
+![](images/sc9.png)  
+Click on plus in project manager or at the toolbar > Files > Add Sources. In dialog window select design source and click on Next.
+![](images/sc10.png)  
+Click on Create File, fill filename and click on OK and Next.
+![](images/sc11.png)
+Fill Entity name or add I/O ports Definitins and click on OK.
+### Adding testbench file
+![](images/sc12.png)
+Open dialog for adding sources and select simulation sources. Click on Next.
+![](images/sc13.png)  
+In the next window click on Create File, fill filename and click on OK and Next.
+![](images/sc14.png)  
+Fill entity name and click on OK.
+### Running simulation
+![](images/sc15.png)  
+Click on toolbar in Flow > Run Simulation > Run Behavioral Simulation
+![](images/sc16.png)  
+Wait for program to complete and you will see simulation output.
