@@ -66,3 +66,19 @@ end Behavioral;
 ### Screenshot of simulation
 ![](images/mux.png)
 ## Tutorial
+### Project creation
+![](images/sc1.png)  
+Click on File > Project > New. In opened window click on Next.
+![](images/sc2.png)  
+First specify location of new project and then project name. Click on Next.
+![](images/sc3.png)  
+Select RTL Project and click on Next.
+![](images/sc5.png)  
+Select target and simulator language as VHDL. Click on Create File and fill filename and click on OK.  
+![](images/sc4.png)  
+It will look like this.  
+Next up is adding constrains files, but we will only click on Next.  
+![](images/sc6.png)  
+Next is choosing hardware and we click on Boards and then on "Nexys A7-50T" and click on Next.
+![](images/sc7.png)  
+Project summary will look like this.
