@@ -1,4 +1,4 @@
-# Assignment 2
+# Assignment 3
 Link to this [Assignment](https://github.com/ondrasouk/Digital-electronics-1/tree/main/Labs/03-vivado)  
 Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
 ## Preparation
