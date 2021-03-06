@@ -3,3 +3,4 @@
 ### [Assignment 1](Labs/01-gates/README.md)
 ### [Assignment 2](Labs/02-logic/README.md)
 ### [Assignment 3](Labs/03-vivado/README.md)
+### [Assignment 4](Labs/04-segment/README.md)
