@@ -4,7 +4,8 @@ Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
 ## 1. Preparation tasks
 ### 1.1 Figure with connection of push buttons on Nexys A7 board
 ![](../03-vivado/images/n4r.png)  
-[Source link](https://reference.digilentinc.com/_media/reference/programmable-logic/nexys-a7/n4r.png)
+[Source link](https://reference.digilentinc.com/_media/reference/programmable-logic/nexys-a7/n4r.png)  
+When the push button is pressed the input value is 1 (high).
 ### 1.2 Timing table
 | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
@@ -128,3 +129,4 @@ Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
         );
 ```
 ### 3.2 Image of the top layer
+![](images/diagram.png)
