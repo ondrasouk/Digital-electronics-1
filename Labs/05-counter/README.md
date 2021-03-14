@@ -129,4 +129,4 @@ When the push button is pressed the input value is 1 (high).
         );
 ```
 ### 3.2 Image of the top layer
-![](images/diagram.png)
+![](images/diagram.svg)
