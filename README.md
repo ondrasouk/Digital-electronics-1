@@ -4,3 +4,4 @@
 ### [Assignment 2](Labs/02-logic/README.md)
 ### [Assignment 3](Labs/03-vivado/README.md)
 ### [Assignment 4](Labs/04-segment/README.md)
+### [Assignment 5](Labs/05-counter/README.md)
