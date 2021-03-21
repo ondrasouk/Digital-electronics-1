@@ -200,6 +200,6 @@ begin
 end architecture Behavioral;
 ```
 ## 3. Eight-digit driver
-
+![](images/display_driver8.svg)
 
 
