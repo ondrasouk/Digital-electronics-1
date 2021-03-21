@@ -153,7 +153,7 @@ end architecture testbench;
 
 ```
 ### 2.3 Screenshot with simulated time waveforms
-![](images/cs1.png)
+![](images/sc1.png)
 ### 2.4 Listing of VHDL architecture of the top layer
 ```VHDL
 architecture Behavioral of top is
