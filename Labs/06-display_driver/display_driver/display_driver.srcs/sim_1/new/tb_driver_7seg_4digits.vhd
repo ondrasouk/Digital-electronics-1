@@ -1,38 +1,14 @@
-# Assignment 6
-Link to this [Assignment](https://github.com/ondrasouk/Digital-electronics-1/tree/main/Labs/06-display_driver)  
-Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
-## 1. Preparation tasks
-![](images/wavedrom.svg)
-## 2. Display driver
-### 2.1 Listing of VHDL code of the process `p_mux`
-```VHDL
-    p_mux : process(s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
-    begin
-        case s_cnt is
-            when "11" =>
-                s_hex <= data3_i;
-                dp_o  <= dp_i(3);
-                dig_o <= "0111";
+------------------------------------------------------------------------
+--
+-- Template for 4-digit 7-segment display driver testbench.
+-- Nexys A7-50T, Vivado v2020.1.1, EDA Playground
+--
+-- Copyright (c) 2020-Present Tomas Fryza
+-- Dept. of Radio Electronics, Brno University of Technology, Czechia
+-- This work is licensed under the terms of the MIT license.
+--
+------------------------------------------------------------------------
 
-            when "10" =>
-                s_hex <= data2_i;
-                dp_o  <= dp_i(2);
-                dig_o <= "1011";
-
-            when "01" =>
-                s_hex <= data1_i;
-                dp_o  <= dp_i(1);
-                dig_o <= "1101";
-
-            when others =>
-                s_hex <= data0_i;
-                dp_o  <= dp_i(0);
-                dig_o <= "1110";
-        end case;
-    end process p_mux;
-```
-### 2.2 Listing of VHDL testbench file `tb_driver_7seg_4digits`
-```VHDL
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -150,56 +126,3 @@ begin
     end process p_stimulus;
 
 end architecture testbench;
-
-```
-### 2.3 Screenshot with simulated time waveforms
-![](images/cs1.png)
-### 2.4 Listing of VHDL architecture of the top layer
-```VHDL
-architecture Behavioral of top is
-    -- No internal signals
-begin
-
-    --------------------------------------------------------------------
-    -- Instance (copy) of driver_7seg_4digits entity
-    driver_seg_4 : entity work.driver_7seg_4digits
-        port map(
-            clk        => CLK100MHZ,
-            reset      => BTNC,
-            data0_i(3) => SW(3),
-            data0_i(2) => SW(2),
-            data0_i(1) => SW(1),
-            data0_i(0) => SW(0),
-            data1_i(3) => SW(7),
-            data1_i(2) => SW(6),
-            data1_i(1) => SW(5),
-            data1_i(0) => SW(4),
-            data2_i(3) => SW(11),
-            data2_i(2) => SW(10),
-            data2_i(1) => SW(9),
-            data2_i(0) => SW(8),
-            data3_i(3) => SW(15),
-            data3_i(2) => SW(14),
-            data3_i(1) => SW(13),
-            data3_i(0) => SW(12),
-            dp_i => "0111",
-            seg_o(6)   => CA,
-            seg_o(5)   => CB,
-            seg_o(4)   => CC,
-            seg_o(3)   => CD,
-            seg_o(2)   => CE,
-            seg_o(1)   => CF,
-            seg_o(0)   => CG,
-            dp_o       => DP,
-            dig_o      => AN(3 downto 0)
-        );
-
-    -- Disconnect the top four digits of the 7-segment display
-    AN(7 downto 4) <= b"1111";
-
-end architecture Behavioral;
-```
-## 3. Eight-digit driver
-
-
-

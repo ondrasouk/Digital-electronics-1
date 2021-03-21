@@ -1,0 +1,38 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Error: 1.st digit display failed
+Time: 65 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 2.nd digit display failed
+Time: 105 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 3.rd digit display failed
+Time: 145 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 1.st digit display failed
+Time: 225 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 2.nd digit display failed
+Time: 265 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 3.rd digit display failed
+Time: 305 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 1.st digit display failed
+Time: 385 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 2.nd digit display failed
+Time: 425 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 3.rd digit display failed
+Time: 465 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 1.st digit display failed
+Time: 545 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 2.nd digit display failed
+Time: 585 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 3.rd digit display failed
+Time: 625 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 1.st digit display failed
+Time: 705 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 2.nd digit display failed
+Time: 745 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 3.rd digit display failed
+Time: 785 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 1.st digit display failed
+Time: 865 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 2.nd digit display failed
+Time: 905 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: 3.rd digit display failed
+Time: 945 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: /run/media/ondra/enc/Sync/BPC-EKT2L/BPC-DE1/cviceni/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
