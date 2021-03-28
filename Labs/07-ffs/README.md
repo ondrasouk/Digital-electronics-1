@@ -3,11 +3,33 @@ Link to this [Assignment](https://github.com/ondrasouk/Digital-electronics-1/tre
 Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
 ## 1. Preparation tasks
 ### 1.1 D-type flip-flop
-
+![](https://latex.codecogs.com/svg.image?q_{n&plus;1}^D=D)  
+| **D** | **Qn** | **Q(n+1)** | **Comments** |
+| :-: | :-: | :-: | :-- |
+| 0 | 0 | 0 | No change |
+| 0 | 1 | 0 | Reset |
+| 1 | 0 | 1 | Set |
+| 1 | 1 | 1 | No change |
 ### 1.2 JK-type flip-flop
-
+![](https://latex.codecogs.com/svg.image?q_{n&plus;1}^{JK}=J&space;\cdot&space;\overline{Q(n)}&space;&plus;&space;\overline{K}&space;\cdot&space;Q(n))  
+| **J** | **K** | **Qn** | **Q(n+1)** | **Comments** |
+| :-: | :-: | :-: | :-: | :-- |
+| 0 | 0 | 0 | 0 | No change |
+| 0 | 0 | 1 | 1 | No change |
+| 0 | 1 | 0 | 0 | Reset|
+| 0 | 1 | 1 | 0 | Reset |
+| 1 | 0 | 0 | 1 | Set |
+| 1 | 0 | 1 | 1 | Set |
+| 1 | 1 | 0 | 1 | Inverse |
+| 1 | 1 | 1 | 0 | Inverse |
 ### 1.3 T-type flip-flop
-
+![](https://latex.codecogs.com/svg.image?q_{n&plus;1}^{T}=T&space;\cdot&space;\overline{Q(n)}&space;&plus;&space;\overline{T}&space;\cdot&space;Q(n))  
+| **T** | **Qn** | **Q(n+1)** | **Comments** |
+| :-: | :-: | :-: | :-- |
+| 0 | 0 | 0 | No change |
+| 0 | 1 | 1 | No change |
+| 1 | 0 | 1 | Inverse |
+| 1 | 1 | 0 | Inverse |
 ## 2. D latch
 ### 2.1 Listing of VHDL code of the process `p_d_latch`
 ```VHDL
