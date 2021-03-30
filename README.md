@@ -6,3 +6,4 @@
 ### [Assignment 4](Labs/04-segment/README.md)
 ### [Assignment 5](Labs/05-counter/README.md)
 ### [Assignment 6](Labs/06-display_driver/README.md)
+### [Assignment 7](Labs/07-ffs/README.md)
