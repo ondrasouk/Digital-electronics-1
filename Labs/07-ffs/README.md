@@ -519,3 +519,4 @@ p_t_ff_rst: process(clk)
 #### 3.3.4 `p_d_ff_arst`
 ![](images/sc-t.png)
 ## 4. Shift register scheme
+![](images/shift_register.svg)
