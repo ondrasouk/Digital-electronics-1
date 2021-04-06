@@ -140,16 +140,16 @@ Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
 ### 3.1 State table
 | **Actual State** | **Output west** | **Output south** | **No cars** | **Cars on west** | **Cars on south** | **Booth direction** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| SOUTH_GO | `RED` | `GREEN` | SOUTH_GO | SOUTH_WAIT | SOUTH_GO | SOUTH_WAIT |
-| SOUTH_WAIT| `RED` | `YELLOW` | STOP1 | STOP1 | STOP1 | STOP1 |
 | STOP1 | `RED` | `RED` | WEST_GO | WEST_GO | WEST_GO | WEST_GO |
 | WEST_GO | `GREEN` | `RED` | WEST_GO | WEST_GO |  WEST_WAIT | WEST_WAIT |
 | WEST_WAIT | `YELLOW` | `RED` | STOP2 | STOP2 | STOP2 | STOP2 |
 | STOP2 | `RED` | `RED` | SOUTH_GO | SOUTH_GO | SOUTH_GO | SOUTH_GO |
+| SOUTH_GO | `RED` | `GREEN` | SOUTH_GO | SOUTH_WAIT | SOUTH_GO | SOUTH_WAIT |
+| SOUTH_WAIT| `RED` | `YELLOW` | STOP1 | STOP1 | STOP1 | STOP1 |
 ### 3.2 State diagram
 ![](images/traffic2.svg)
 ### 3.3 Listing of VHDL code of sequential process p_smart_traffic_fsm
-```VDHL
+```VHDL
     p_smart_traffic_fsm : process(clk)
     begin
         if rising_edge(clk) then
