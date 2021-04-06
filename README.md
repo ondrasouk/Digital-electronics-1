@@ -7,3 +7,4 @@
 ### [Assignment 5](Labs/05-counter/README.md)
 ### [Assignment 6](Labs/06-display_driver/README.md)
 ### [Assignment 7](Labs/07-ffs/README.md)
+### [Assignment 8](Labs/08-traffic_lights/README.md)
