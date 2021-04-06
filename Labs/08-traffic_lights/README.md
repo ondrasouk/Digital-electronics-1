@@ -18,7 +18,7 @@ Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
 
 ## 2. Traffic light controller
 ### 2.1 State diagram
-![]()
+![](images/traffic.svg)
 ### 2.2 Listing of VHDL code of sequential process `p_traffic_fsm`
 ```VHDL
     --------------------------------------------------------------------
@@ -138,7 +138,92 @@ Link to [top of repository](https://github.com/ondrasouk/Digital-electronics-1)
 ![](images/sc1.png)
 ## 3. Smart controller
 ### 3.1 State table
-
+| **Actual State** | **Output west** | **Output south** | **No cars** | **Cars on west** | **Cars on south** | **Booth direction** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| SOUTH_GO | `RED` | `GREEN` | SOUTH_GO | SOUTH_WAIT | SOUTH_GO | SOUTH_WAIT |
+| SOUTH_WAIT| `RED` | `YELLOW` | STOP1 | STOP1 | STOP1 | STOP1 |
+| STOP1 | `RED` | `RED` | WEST_GO | WEST_GO | WEST_GO | WEST_GO |
+| WEST_GO | `GREEN` | `RED` | WEST_GO | WEST_GO |  WEST_WAIT | WEST_WAIT |
+| WEST_WAIT | `YELLOW` | `RED` | STOP2 | STOP2 | STOP2 | STOP2 |
+| STOP2 | `RED` | `RED` | SOUTH_GO | SOUTH_GO | SOUTH_GO | SOUTH_GO |
 ### 3.2 State diagram
-![]()
+![](images/traffic2.svg)
 ### 3.3 Listing of VHDL code of sequential process p_smart_traffic_fsm
+```VDHL
+    p_smart_traffic_fsm : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then       -- Synchronous reset
+                s_state <= STOP1 ;      -- Set initial state
+                s_cnt   <= c_ZERO;      -- Clear all bits
+
+            elsif (s_en = '1') then
+                -- Every 250 ms, CASE checks the value of the s_state 
+                -- variable and changes to the next state according 
+                -- to the delay value.
+                case s_state is
+
+                    -- If the current state is STOP1, then wait 1 sec
+                    -- and move to the next GO_WAIT state.
+                    when STOP1 =>
+                        -- Count up to c_DELAY_1SEC
+                        if (s_cnt < c_DELAY_1SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            -- Move to the next state
+                            s_state <= WEST_GO;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+
+                    when WEST_GO =>
+                        if (s_cnt > c_DELAY_4SEC) and (south_sense_i = '1') then
+                            s_state <= WEST_WAIT;
+                            s_cnt <= c_ZERO;
+                        elsif (s_cnt > c_DELAY_4SEC) then
+                            s_cnt <= c_DELAY_4SEC + 1;
+                        else
+                            s_cnt <= s_cnt + 1;
+                        end if; 
+                        
+                    when WEST_WAIT =>
+                        if (s_cnt < c_DELAY_2SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= STOP2;
+                            s_cnt <= c_ZERO;
+                        end if; 
+                        
+                    when STOP2 =>
+                        if (s_cnt < c_DELAY_1SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= SOUTH_GO;
+                            s_cnt <= c_ZERO;
+                        end if; 
+                        
+                    when SOUTH_GO =>
+                        if (s_cnt > c_DELAY_4SEC) and (west_sense_i = '1') then
+                            s_state <= SOUTH_WAIT;
+                            s_cnt <= c_ZERO;
+                        elsif (s_cnt > c_DELAY_4SEC) then
+                            s_cnt <= c_DELAY_4SEC + 1;
+                        else
+                            s_cnt <= s_cnt + 1;
+                        end if;
+                        
+                    when SOUTH_WAIT =>
+                        if (s_cnt < c_DELAY_2SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= STOP1;
+                            s_cnt <= c_ZERO;
+                        end if; 
+                    when others =>
+                        s_state <= STOP1;
+
+                end case;
+            end if; -- Synchronous reset
+        end if; -- Rising edge
+    end process p_smart_traffic_fsm;
+```
